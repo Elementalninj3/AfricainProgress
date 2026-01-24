@@ -28,28 +28,28 @@ const Navbar = () => {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-6 lg:px-12"
+        className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 px-4 lg:px-8"
       >
         <div className="w-full mx-auto">
-          <div className="flex justify-between items-center h-24">
+          <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link to="/" className="flex-shrink-0 flex items-center gap-4 cursor-pointer group">
-              <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-2xl shadow-primary/30 transition-transform group-hover:scale-110">
-                <img src={logoMain} alt="Logo" className="w-8 h-8 object-contain" />
+            <Link to="/" className="flex-shrink-0 flex items-center gap-3 cursor-pointer group">
+              <div className="w-9 h-9 bg-primary rounded-xl flex items-center justify-center shadow-xl shadow-primary/30 transition-transform group-hover:scale-110">
+                <img src={logoMain} alt="Logo" className="w-6 h-6 object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-black tracking-tighter text-primary leading-none">Africa In Progress</span>
-                <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-gray-400 mt-1.5">Catalyzing Innovation</span>
+                <span className="text-lg font-black tracking-tighter text-primary leading-none">Africa In Progress</span>
+                <span className="text-[8px] uppercase tracking-[0.3em] font-bold text-gray-400 mt-1">Catalyzing Innovation</span>
               </div>
             </Link>
 
             {/* Nav Links */}
-            <div className="hidden lg:flex items-center space-x-12">
+            <div className="hidden lg:flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link 
                   key={link.name} 
                   to={link.path}
-                  className={`text-sm font-bold uppercase tracking-widest transition-all ${
+                  className={`text-xs font-bold uppercase tracking-widest transition-all ${
                     isActive(link.path) 
                       ? 'text-primary' 
                       : 'text-primary/40 hover:text-primary'
@@ -61,25 +61,25 @@ const Navbar = () => {
             </div>
 
             {/* Right Side */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-6">
               <div className="relative group">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400 group-focus-within:text-primary transition-colors" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-gray-400 group-focus-within:text-primary transition-colors" />
                 <input 
                   type="text" 
                   placeholder="Search ecosystem..." 
-                  className="pl-12 pr-6 py-3 bg-gray-50 border border-gray-100 rounded-2xl text-sm focus:ring-2 focus:ring-primary/5 w-64 transition-all focus:bg-white focus:w-80"
+                  className="pl-10 pr-4 py-2 bg-gray-50 border border-gray-100 rounded-xl text-xs focus:ring-2 focus:ring-primary/5 w-52 transition-all focus:bg-white focus:w-64"
                 />
               </div>
               
-              <button className="flex items-center gap-2 text-sm font-bold text-gray-600 hover:text-primary transition-colors">
-                <Globe className="w-4 h-4" />
+              <button className="flex items-center gap-1.5 text-xs font-bold text-gray-600 hover:text-primary transition-colors">
+                <Globe className="w-3.5 h-3.5" />
                 <span>EN</span>
-                <ChevronDown className="w-4 h-4" />
+                <ChevronDown className="w-3.5 h-3.5" />
               </button>
 
               <button 
                 onClick={handleNewsletterClick}
-                className="px-8 py-3.5 bg-primary text-white rounded-2xl text-sm font-black hover:bg-gray-800 transition-all shadow-xl shadow-primary/20 active:scale-95"
+                className="px-5 py-2 bg-primary text-white rounded-xl text-[10px] font-black hover:bg-gray-800 transition-all shadow-xl shadow-primary/20 active:scale-95"
               >
                 JOIN NEWSLETTER
               </button>

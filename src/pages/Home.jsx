@@ -53,23 +53,23 @@ const Home = () => {
         <Hero post={featuredPost} />
       </motion.div>
 
-      <section className="px-6 lg:px-12 py-24">
+      <section className="px-4 lg:px-8 py-16">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col lg:flex-row justify-between items-end gap-12 mb-20"
+          className="flex flex-col lg:flex-row justify-between items-end gap-8 mb-12"
         >
-          <div className="max-w-3xl">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="h-[2px] w-16 bg-primary" />
-              <span className="text-sm font-black uppercase tracking-[0.3em] text-primary/40">Ecosystem Insight</span>
+          <div className="max-w-2xl">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="h-[2px] w-12 bg-primary" />
+              <span className="text-xs font-black uppercase tracking-[0.3em] text-primary/40">Ecosystem Insight</span>
             </div>
-            <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-primary mb-6 md:mb-8 tracking-tighter leading-none">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-black text-primary mb-4 md:mb-5 tracking-tighter leading-none">
               Sustainable <br className="hidden md:block"/> Digital Growth
             </h2>
-            <p className="text-gray-500 text-lg sm:text-xl md:text-2xl font-medium max-w-2xl leading-relaxed lg:leading-[2]">
+            <p className="text-gray-500 text-base sm:text-lg md:text-xl font-medium max-w-xl leading-relaxed lg:leading-[1.8]">
               We track the exponential technologies and radical entrepreneurs building Africa's digital infrastructure.
             </p>
           </div>
@@ -87,7 +87,7 @@ const Home = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 md:gap-y-24"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 md:gap-y-14"
           >
             {filteredPosts.length > 0 ? (
               filteredPosts.map((post) => (
@@ -99,9 +99,9 @@ const Home = () => {
               <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="col-span-full py-32 text-center bg-gray-50 rounded-[3rem]"
+                className="col-span-full py-20 text-center bg-gray-50 rounded-[2rem]"
               >
-                <p className="text-gray-400 text-2xl font-black uppercase tracking-widest">No matching insights found.</p>
+                <p className="text-gray-400 text-lg font-black uppercase tracking-widest">No matching insights found.</p>
               </motion.div>
             )}
           </motion.div>
@@ -114,7 +114,7 @@ const Home = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="mt-40"
+          className="mt-24"
         >
           <SidebarExtras />
         </motion.div>
