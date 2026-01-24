@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronDown, Filter } from 'lucide-react';
+
 import { CATEGORIES } from '../data/posts';
 
 const Filters = ({ activeCategory, setActiveCategory }) => {
@@ -21,15 +21,7 @@ const Filters = ({ activeCategory, setActiveCategory }) => {
         ))}
       </div>
       
-      <div className="relative group">
-        <button className="flex items-center gap-8 px-8 py-4 bg-white border-2 border-primary text-xs font-black uppercase tracking-widest text-primary rounded-[1.5rem] hover:bg-primary hover:text-white transition-all duration-300">
-          <span className="flex items-center gap-3">
-            <Filter className="w-4 h-4" />
-            Sort By
-          </span>
-          <ChevronDown className="w-4 h-4" />
-        </button>
-      </div>
+
     </div>
   );
 };

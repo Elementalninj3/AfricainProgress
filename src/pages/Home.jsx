@@ -66,10 +66,10 @@ const Home = () => {
               <div className="h-[2px] w-16 bg-primary" />
               <span className="text-sm font-black uppercase tracking-[0.3em] text-primary/40">Ecosystem Insight</span>
             </div>
-            <h2 className="text-5xl md:text-7xl font-black text-primary mb-8 tracking-tighter leading-none">
-              Sustainable <br /> Digital Growth
+            <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-primary mb-6 md:mb-8 tracking-tighter leading-none">
+              Sustainable <br className="hidden md:block"/> Digital Growth
             </h2>
-            <p className="text-gray-500 text-xl font-medium max-w-2xl leading-relaxed">
+            <p className="text-gray-500 text-lg sm:text-xl md:text-2xl font-medium max-w-2xl leading-relaxed lg:leading-[2]">
               We track the exponential technologies and radical entrepreneurs building Africa's digital infrastructure.
             </p>
           </div>
@@ -87,7 +87,7 @@ const Home = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-24"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12 md:gap-y-24"
           >
             {filteredPosts.length > 0 ? (
               filteredPosts.map((post) => (

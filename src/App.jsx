@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Founders from './pages/Founders';
 import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
 import Article from './pages/Article';
 
 // Scroll to top component
@@ -20,12 +21,13 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col selection:bg-primary selection:text-white bg-white">
+      <div className="min-h-screen w-full overflow-x-hidden flex flex-col selection:bg-primary selection:text-white bg-white">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/founders" element={<Founders />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/post/:id" element={<Article />} />
         </Routes>
         <Footer />

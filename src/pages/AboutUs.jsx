@@ -14,11 +14,11 @@ const AboutUs = () => {
           <div className="h-[2px] w-16 bg-primary" />
           <span className="text-sm font-black uppercase tracking-[0.3em] text-primary/40">Our Mission</span>
         </div>
-        <h1 className="text-5xl md:text-8xl font-black text-primary mb-12 tracking-tighter leading-none">
+        <h1 className="text-3xl md:text-5xl lg:text-8xl font-black text-primary mb-8 md:mb-12 tracking-tighter leading-none">
           Africa <br /> In Progress
         </h1>
         
-        <div className="space-y-12 text-2xl font-medium text-gray-500 leading-relaxed italic">
+        <div className="space-y-8 md:space-y-12 text-base md:text-xl lg:text-2xl font-medium text-gray-500 leading-relaxed lg:leading-[2] italic">
           <p>
             We are a digital-first editorial platform tracking the exponential growth of the African startup ecosystem.
           </p>

@@ -66,7 +66,7 @@ const Article = () => {
               </div>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-primary mb-12 tracking-tighter leading-[0.95] md:-ml-1">
+            <h1 className="text-2xl sm:text-5xl md:text-7xl lg:text-8xl font-black text-primary mb-8 md:mb-12 tracking-tighter leading-[1] md:-ml-1">
               {post.title}
             </h1>
 
@@ -124,22 +124,22 @@ const Article = () => {
         </div>
 
         {/* 3. MAIN CONTENT (Editorial Columns) */}
-        <div className="max-w-5xl mx-auto px-4">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
           <article 
-            className="prose prose-xl md:prose-2xl prose-primary max-w-none 
-              [&_p]:text-2xl [&_p]:leading-[1.9] [&_p]:font-medium [&_p]:mb-12 [&_p]:text-gray-700
-              prose-headings:font-black prose-headings:text-primary prose-headings:tracking-tighter
-              prose-h1:text-5xl md:prose-h1:text-7xl prose-h1:mb-12
-              [&_h2]:text-5xl [&_h2]:md:text-6xl [&_h2]:font-black [&_h2]:text-primary [&_h2]:tracking-tighter [&_h2]:mt-24 [&_h2]:mb-10
-              [&_h3]:text-3xl [&_h3]:md:text-4xl [&_h3]:font-black [&_h3]:text-primary [&_h3]:tracking-tighter [&_h3]:mt-16 [&_h3]:mb-6
-              prose-blockquote:border-l-0 prose-blockquote:bg-gray-50/50 prose-blockquote:p-12 prose-blockquote:rounded-[3rem] prose-blockquote:italic prose-blockquote:text-3xl prose-blockquote:font-black prose-blockquote:text-primary/90 prose-blockquote:my-20 prose-blockquote:shadow-inner
-              prose-img:rounded-[2.5rem] prose-img:shadow-2xl prose-img:my-24
-              prose-ul:list-disc prose-ul:marker:text-primary/20 prose-ul:my-10
-              prose-ol:list-decimal prose-ol:marker:text-primary/40 prose-ol:my-10
-              [&_li]:text-2xl [&_li]:pl-2 [&_li]:my-4 [&_li]:text-gray-600 [&_li]:font-medium
-              prose-strong:font-black prose-strong:text-primary
-              prose-em:font-bold prose-em:italic
-              [&_iframe]:w-full [&_iframe]:aspect-video [&_iframe]:rounded-[3rem] [&_iframe]:my-24 [&_iframe]:shadow-2xl"
+            className="prose prose-lg md:prose-xl lg:prose-2xl prose-primary max-w-none 
+              [&_p]:text-base [&_p]:md:text-lg [&_p]:lg:text-xl [&_p]:leading-[1.75] [&_p]:md:leading-[1.8] [&_p]:lg:leading-[1.85] [&_p]:font-normal [&_p]:mb-6 [&_p]:md:mb-8 [&_p]:text-gray-700
+              prose-headings:font-bold prose-headings:text-primary prose-headings:tracking-tight
+              prose-h1:text-3xl md:prose-h1:text-5xl lg:prose-h1:text-6xl prose-h1:mb-6 md:prose-h1:mb-8
+              [&_h2]:text-2xl [&_h2]:md:text-4xl [&_h2]:lg:text-5xl [&_h2]:font-bold [&_h2]:text-primary [&_h2]:tracking-tight [&_h2]:mt-12 [&_h2]:md:mt-16 [&_h2]:mb-4 [&_h2]:md:mb-6
+              [&_h3]:text-xl [&_h3]:md:text-2xl [&_h3]:lg:text-3xl [&_h3]:font-bold [&_h3]:text-primary [&_h3]:tracking-tight [&_h3]:mt-8 [&_h3]:md:mt-10 [&_h3]:mb-3 [&_h3]:md:mb-4
+              prose-blockquote:border-l-0 prose-blockquote:bg-gray-50/50 prose-blockquote:p-6 prose-blockquote:md:p-10 prose-blockquote:rounded-[2rem] prose-blockquote:italic prose-blockquote:text-lg prose-blockquote:md:text-2xl prose-blockquote:font-medium prose-blockquote:text-primary/90 prose-blockquote:my-8 prose-blockquote:md:my-12 prose-blockquote:shadow-inner
+              prose-img:rounded-[1.5rem] prose-img:md:rounded-[2rem] prose-img:shadow-xl prose-img:my-8 prose-img:md:my-12
+              prose-ul:list-disc prose-ul:marker:text-primary/20 prose-ul:my-6 prose-ul:md:my-8
+              prose-ol:list-decimal prose-ol:marker:text-primary/40 prose-ol:my-6 prose-ol:md:my-8
+              [&_li]:text-base [&_li]:md:text-lg [&_li]:lg:text-xl [&_li]:pl-2 [&_li]:my-2 [&_li]:text-gray-700 [&_li]:font-normal
+              prose-strong:font-semibold prose-strong:text-primary
+              prose-em:font-normal prose-em:italic
+              [&_iframe]:w-full [&_iframe]:aspect-video [&_iframe]:rounded-[1.5rem] [&_iframe]:md:rounded-[2rem] [&_iframe]:my-8 [&_iframe]:md:my-12 [&_iframe]:shadow-xl"
             dangerouslySetInnerHTML={{ __html: post.content || '<p>Editorial coverage of this venture is being finalized by our analyst team...</p>' }}
           />
 
