@@ -16,7 +16,7 @@ export const BLOG_POSTS = [
     title: "NAMIBIA CLEARS THE PATH FOR LOW-EARTH ORBIT CONNECTIVITY",
     excerpt: "Namibia has granted regulatory approval for Low-Earth Orbit (LEO) satellite services, opening the door for next-generation internet connectivity across the country.",
     category: "Connectivity",
-    date: "24 Jan 2024",
+    date: "20 Jan 2026",
     readTime: "5 mins read",
     author: {
       name: "Treasure Alao",
@@ -31,7 +31,7 @@ export const BLOG_POSTS = [
     title: "CRAN TECH CHALLENGE UNVEILS NAMIBIA'S BRIGHTEST STARTUPS",
     excerpt: "CRAN's inaugural Tech Challenge 2025 brought together over 110 young innovators competing for N$100,000 in prizes, showcasing game-changing solutions in education, healthcare, and government services.",
     category: "Innovation",
-    date: "23 Jan 2024",
+    date: "12 Jan 2026",
     readTime: "8 mins read",
     author: {
       name: "Treasure Alao",
